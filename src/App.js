@@ -33,7 +33,7 @@ class App extends Component {
           <hr />
 
           <div className="row">
-            <AddTaskForm task={this.state.tasks} addTask={ this.addTask }/>
+            <AddTaskForm addTask={ this.addTask }/>
           </div>
 
         </div>

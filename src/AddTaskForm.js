@@ -6,9 +6,6 @@ class AddTaskForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange(e) {
-  }
-
   onSubmit(e) {
     e.preventDefault();
     //There must be a React way of getting this.
@@ -20,7 +17,7 @@ class AddTaskForm extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <div className='form-group row'>
-          <input type='text' ref='item' onChange={this.onChange} className='form-control' placeholder='Add a new Task'/>
+          <input type='text' ref='item' className='form-control' placeholder='Add a new Task'/>
         </div>
       </form>
     )
